@@ -135,6 +135,10 @@
     .ab5 { bottom: 0; left: 40%; width: 160px; height: 5px; background: var(--yellow); }
 
     .hero-inner { position: relative; z-index: 2; text-align: center; max-width: 860px; }
+    .hero-logos { display: flex; align-items: center; justify-content: center; gap: 32px; margin-bottom: 36px; flex-wrap: wrap; }
+    .hero-logo-cvb { height: 80px; width: auto; object-fit: contain; }
+    .hero-logo-rise { height: 100px; width: auto; object-fit: contain; }
+    .hero-logo-divider { width: 1px; height: 80px; background: var(--gray-mid); }
     .hero-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--blue-primary); margin-bottom: 16px; }
     .hero-title { font-size: clamp(32px, 5vw, 64px); font-weight: 800; text-transform: uppercase; letter-spacing: 2px; line-height: 1.1; color: var(--navy); margin-bottom: 14px; }
     .hero-title span { color: var(--blue-primary); }
@@ -302,7 +306,11 @@
       <div class="accent-bar ab5"></div>
     </div>
     <div class="hero-inner">
-      <p class="hero-eyebrow">Wilmington &amp; Beaches CVB · 10-Year Strategic Plan</p>
+      <div class="hero-logos">
+        <img src="assets/cvb-logo.svg" alt="Wilmington & Beaches CVB" class="hero-logo-cvb" />
+        <div class="hero-logo-divider"></div>
+        <img src="assets/destination-rise-logo.png" alt="Destination on the Rise" class="hero-logo-rise" />
+      </div>
       <h1 class="hero-title">Tourism <span>Master Plan</span><br>Action Plan Tracker</h1>
       <p class="hero-subtitle">A Unified Vision for Wilmington &amp; Beaches</p>
       <div class="hero-nav-buttons">
